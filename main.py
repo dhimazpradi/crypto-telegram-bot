@@ -7,7 +7,8 @@ import threading
 from datetime import datetime, timezone
 
 # ─── CONFIG ───────────────────────────────────────────────
-TOKEN   = os.environ.get("TELEGRAM_TOKEN", "YOUR_BOT_TOKEN_HERE")
+import os
+TOKEN = os.environ.get("TELEGRAM_TOKEN")
 CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "YOUR_CHAT_ID_HERE")
 
 INTERVAL            = 300   # scan every 5 minutes
